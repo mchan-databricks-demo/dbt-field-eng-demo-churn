@@ -7,3 +7,4 @@
 
 select * 
 from field_eng_dbt_demo.dbt_c360.t1_bronze_orders
+limit 3
