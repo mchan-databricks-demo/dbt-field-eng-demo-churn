@@ -1,7 +1,7 @@
 {{
  config(
- materialized = “table”, 
- file_format = “delta”
+ materialized = 'table', 
+ file_format = 'delta'
  )
 }}
 
