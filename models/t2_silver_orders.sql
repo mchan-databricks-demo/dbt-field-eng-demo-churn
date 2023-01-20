@@ -1,3 +1,3 @@
 select * 
-from t1_bronze_orders
+from {{ref('t1_bronze_orders')}}
 limit 4;
