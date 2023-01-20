@@ -15,4 +15,4 @@ select
   cast(gender as int),
   cast(age_group as int), 
   cast(churn as int) as churn
-from field_eng_dbt_demo.dbt_c360.t1_bronze_uers
+from field_eng_dbt_demo.dbt_c360.t1_bronze_users
