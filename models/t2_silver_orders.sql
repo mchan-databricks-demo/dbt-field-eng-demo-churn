@@ -1,3 +1,9 @@
+{{
+ config(
+ materialized = “table”, 
+ file_format = “delta”
+ )
+}}
+
 select * 
-from t1_bronze_orders
-limit 4;
+from {{ ref('t1_bronze_orders') }}
