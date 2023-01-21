@@ -15,7 +15,7 @@ models:
     columns:
       - name: order_id
         tests:
-          - not_null
+          - unique
       - name: user_id
         tests:
           - not_null 

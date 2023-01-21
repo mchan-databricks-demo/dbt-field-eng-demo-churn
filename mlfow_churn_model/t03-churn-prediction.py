@@ -20,9 +20,12 @@
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC USE CATALOG field_eng_dbt_catalog; 
+# MAGIC USE CATALOG field_eng_dbt_demo;
 # MAGIC USE dbt_c360;
 
 # COMMAND ----------
 
-
+# MAGIC %sql
+# MAGIC CREATE OR REPLACE VIEW t3_gold_churn_prediction_report 
+# MAGIC AS 
+# MAGIC SELECT predict_churn(struct(user_id, age_group, canal, country, gender, order_count, total_amount, total_item, platform, event_count, session_count, days_since_creation, days_since_last_activity, days_last_event)) as churn_prediction, * FROM STREAM(live.churn_features)
