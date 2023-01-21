@@ -13,7 +13,7 @@ models:
               values: [1, 0]
   - name: t2_silver_orders
     columns:
-      - name: order_id
+      - name: id
         tests:
           - not_null
       - name: user_id
