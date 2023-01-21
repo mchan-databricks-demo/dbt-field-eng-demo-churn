@@ -7,7 +7,7 @@ select
   session_id,
   event_id,
   `date`,
-  platform
+  platform,
   action,
   url
 from field_eng_dbt_demo.dbt_c360.t1_bronze_events
