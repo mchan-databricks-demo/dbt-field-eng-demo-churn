@@ -2,7 +2,7 @@
  config(materialized = 'table', file_format = 'delta')
 }}
 
--- order data cleaned and anonymized for analysis -- 
+--notes: order data cleaned and anonymized for analysis -- 
 select
   cast(amount as int),
   `id` as order_id,

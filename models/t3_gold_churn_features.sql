@@ -2,7 +2,7 @@
  config(materialized = 'table', file_format = 'delta')
 }}
 
--- final user table with all information for Analysis / Ml -- 
+-- notes: final user table with all information for Analysis / ML -- 
 with 
     -- block 1 -- 
     churn_orders_stats as 

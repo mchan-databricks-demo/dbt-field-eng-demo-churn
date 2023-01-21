@@ -2,7 +2,7 @@
  config(materialized = 'table', file_format = 'delta')
 }}
 
--- user data cleaned and anonymized for analysis -- 
+-- notes: user data cleaned and anonymized for analysis -- 
 select
   id as user_id,
   sha1(email) as email, 

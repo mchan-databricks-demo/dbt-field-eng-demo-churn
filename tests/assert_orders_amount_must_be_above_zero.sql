@@ -1,6 +1,6 @@
 {{ config(store_failures = true) }}
 
--- quarantine records and isolate them if the total sales amount is negative -- 
+-- notes: quarantine records and isolate them if the total sales amount is negative -- 
 select 
  user_id,
  sum(amount) as total_amount 
