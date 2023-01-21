@@ -1,5 +1,5 @@
 name: 'dbt_c360_demo'
---
+
 config-version: 2
 version: '0.1'
 
